@@ -1,0 +1,321 @@
+/* 🌟 RESPONSIVE DESIGN 🌟 */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .wishlist-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-card {
+        width: 100%;
+    }
+
+    .login-register-container {
+        min-height: 90vh;
+    }
+}
+
+/* 🌟 RESET DEFAULT STYLES 🌟 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+/* 🌟 FIX NAVBAR SIZE & CONTENT VISIBILITY 🌟 */
+body {
+    padding-top: 70px; /* Adjust based on navbar height */
+    display: flex;
+    flex-direction: column;
+    background-color: #F6F1DE;
+}
+
+/* 🌟 NAVBAR STYLING 🌟 */
+.navbar {
+    height: 50px; /* Reduce navbar size */
+    padding: 5px 0; /* Reduce padding */
+    font-size: 14px; /* Reduce text size */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f7f2;
+}
+
+/* Reduce Logo Size */
+.navbar-brand img {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+    padding: 5px 10px;
+    font-size: 14px;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ff9800;
+}
+
+/* 🌟 SEARCH BAR STYLING 🌟 */
+.form-control {
+    border-radius: 25px;
+    padding: 8px 15px;
+}
+
+.btn-outline-success {
+    border-radius: 25px;
+}
+
+/* 🌟 FIX FOOTER FULL WIDTH & POSITION 🌟 */
+footer {
+    position: relative;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: auto;
+}
+
+/* 🌟 MAIN CONTENT ADJUSTMENT 🌟 */
+.container {
+    flex: 1; /* Ensures footer stays at bottom */
+}
+
+/* 🌟 FIX LOGIN & REGISTER FORM CENTERING 🌟 */
+.login-register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    margin-top: 50px; /* Adds spacing below navbar */
+}
+
+.card {
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+/* 🌟 FORM INPUT STYLING 🌟 */
+input.form-control {
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/* 🌟 SHOP & PRODUCT LISTING STYLES 🌟 */
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-card {
+    width: 300px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+/* 🌟 WISHLIST PAGE STYLING 🌟 */
+.wishlist-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.wishlist-item {
+    width: 250px;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.wishlist-item img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* 🌟 CART & CHECKOUT PAGE STYLING 🌟 */
+.cart-container, .checkout-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Cart Item */
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-item img {
+    width: 60px;
+    border-radius: 5px;
+}
+
+/* Order Summary */
+.order-summary {
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 5px;
+}
+/* 🌟 Uniform Product Images 🌟 */
+.product-card img, 
+.wishlist-item img, 
+.cart-item img {
+    width: 100%;  /* Make the image fill the container */
+    height: 250px; /* Set a fixed height for consistency */
+    object-fit: cover; /* Ensures no stretching or distortion */
+    border-radius: 8px; /* Optional: Adds rounded corners */
+}
+.popup-message {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #3078ff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: fadeInOut 2s ease-in-out;
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+}
+/* 🌟admindashboard-page 🌟 */
+/* Sidebar Styling */
+.sidebar {
+    width: 250px; /* Fixed width */
+    height: 100vh; /* Full height */
+    background: #1e1e2f; /* Dark background */
+    color: #ffffff;
+    position: fixed;
+    left: -250px; /* Hide initially */
+    top: 0;
+    padding: 20px;
+    transition: left 0.3s ease-in-out;
+    z-index: 1000; /* Ensure it stays above content */
+    display: flex;
+    flex-direction: column;
+}
+
+/* When active, show sidebar */
+.sidebar.active {
+    left: 0;
+}
+
+/* Sidebar Navigation */
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.nav-links li {
+    padding: 12px 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.nav-links a i {
+    margin-right: 10px;
+}
+
+.nav-links a:hover {
+    color: #ffcc00;
+}
+
+/* Toggle & Close Buttons */
+.toggle-btn {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    padding-left: 20px;
+    color: #333;
+    z-index: 1100;
+}
+
+.close-btn {
+    font-size: 20px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+}
+
+/* Logout Button */
+.logout-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 15px;
+    background: #e74c3c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 80%;
+    border-radius: 5px;
+}
+
+.logout-btn:hover {
+    background: #c9302c;
+}
+
+/* Main Content Adjust */
+.main-content {
+    background-color: #f5f5f5;
+    margin-left: 20px;
+    padding: 20px;
+    transition: margin-left 0.3s ease-in-out;
+}
+
+/* Shift content when sidebar opens */
+.sidebar.active ~ .main-content {
+    margin-left: 250px;
+}

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>🛍️GBSTORE</title>
+    <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+ <body>  
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg" style="background-color: #f9f7f2;">
+<div class="container">
+        <!-- Logo with Brand Name -->
+        <a class="navbar-brand fw-bold d-flex align-items-center" href="images/logo.jpg">🛍️GBSTORE
+            <img src="images/logo.jpg" alt="GBStore logo" width="40" height="40" class="me-2"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="wishlist.html">Wishlist</a></li>
+
+         </ul>
+            
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            <a href="cart.html" class="btn btn-dark">
+                <i class="fas fa-shopping-cart"></i> Cart
+            </a>
+               <a href="login.html" class="btn btn-primary">Login / Register</a>
+               <a href="admin-login.html">
+                <button>Admin Login</button>
+                </a>
+                </div>
+    </div>
+</nav>
+
+<!-- Hero Section with Carousel -->
+
+<header class="hero-section mb-0">
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active" data-bs-interval="1000"> 
+            <img src="images/saleimg.jpg" class="d-block w-100" alt="Banner">
+            <div class="carousel-caption">
+                <h1>Exclusive Summer Deals - Save Up to 50%!</h1>
+                <p>Hottest discounts on top-selling products.</p>
+                <a href="#" class="btn btn-danger">Shop Now</a>
+                
+            </div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="carousel-item" data-bs-interval="1000">
+            <img src="images/saleimg2.jpg" class="d-block w-100" alt="Banner">
+        </div>
+        <!-- Slide 3 -->
+        <div class="carousel-item" data-bs-interval="1000">
+            <img src="images/saleimg3.jpg" class="d-block w-100" alt="Banner">
+    </div>
+</div>
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel1" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+</header>
+
+<!--Featured-Categories-->
+    <h2 class="text-center text-white py-2" style="background-color: #ffbe6e;">
+    Featured Categories</h2>
+     <div class="row">
+        <!-- Category 1 -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="images/Electronics.jpg" class="card-img-top" alt="Electronics">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Electronics</h5>
+                    <p class="card-text">Latest gadgets and devices</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Category 2 -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="images/Fashion.jpg" class="card-img-top" alt="Fashion">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Fashion</h5>
+                    <p class="card-text">Trending styles & clothing</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Category 3 -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="images/home appliance.jpg" class="card-img-top" alt="Home Appliances">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Home Appliances</h5>
+                    <p class="card-text">Essential appliances for daily use</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Category 4 -->
+        <div class="col-md-4 mt-4">
+            <div class="card">
+                <img src="images/sports.jpg" class="card-img-top" alt="Sports">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Sports</h5>
+                    <p class="card-text">Gear up for an active lifestyle</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Category 5 -->
+        <div class="col-md-4 mt-4">
+            <div class="card">
+                <img src="images/Beauty &Personal care.jpg" class="card-img-top" alt="Beauty & Personal Care">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Beauty & Personal Care</h5>
+                    <p class="card-text">Self-care essentials for you</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Category 6 -->
+        <div class="col-md-4 mt-4">
+            <div class="card">
+                <img src="images/books.jpg" class="card-img-top" alt="Books">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Books</h5>
+                    <p class="card-text">Discover the best reads</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Product Listings -->
+<h2 class="text-center text-white py-2" style="background-color: #ffbe6e;">
+    Our Products</h2>
+    <div class="row">
+        <!-- Product 1:-->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="images/SmartPhone.jpg" class="card-img-top" alt="Smartphone">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Smartphone-X</h5>
+                    <p class="card-text">$29,900</p>
+                    <a href="product.html" class="btn btn-info">View Details</a>
+                    <a href="product.html" class="btn btn-primary">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 2: -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="images/Laptop.jpg" class="card-img-top" alt="Laptop">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Laptop</h5>
+                    <p class="card-text">$30,000</p>
+                    <a href="images/Laptop.jpg" class="btn btn-primary">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 3:-->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="images/Headphone.jpg" class="card-img-top" alt="Headphones">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Headphones</h5>
+                    <p class="card-text">$9,999</p>
+                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 4:-->
+        <div class="col-md-4 mt-4">
+            <div class="card">
+                <img src="images/smartwatch.jpg" class="card-img-top" alt="Smartwatch">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Smartwatch</h5>
+                    <p class="card-text">$1,599</p>
+                    <a href="images/smartwatch.jpg" class="btn btn-primary">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 5:-->
+        <div class="col-md-4 mt-4">
+            <div class="card">
+                <img src="images/camera.jpg" class="card-img-top" alt="Camera">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Camera</h5>
+                    <p class="card-text">$84,999</p>
+                    <a href="images/camera.jpg" class="btn btn-primary">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 6: -->
+        <div class="col-md-4 mt-4">
+            <div class="card">
+                <img src="images/wireless speaker.jpg" class="card-img-top" alt="Wireless Speaker">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Wireless Speaker</h5>
+                    <p class="card-text">$14,859</p>
+                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Footer Section-->
+<footer class="bg-dark text-white pt-4">
+    <div class="container">
+        <div class="row">
+
+<!-- Quick Links -->
+            <div class="col-md-3">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white text-decoration-none">Home🏠</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Shop🛍️</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">About ℹ </a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Contact📞support @gbstore.com </a></li>
+                </ul>
+            </div>
+
+            <!-- Policies -->
+            <div class="col-md-3">
+                <h5>Policies</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white text-decoration-none">Privacy Policy</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Terms & Conditions</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Refund Policy</a></li>
+                 </ul>
+            </div>
+<!-- Social Media -->
+<div class="col-md-3">
+    <h5>Follow Us On</h5>
+    <a href="https://www.facebook.com" target="_blank" class="text-white me-3">
+        <i class="fab fa-facebook fa-lg"></i>
+    </a>
+    <a href="https://twitter.com" target="_blank" class="text-white me-3">
+        <i class="fab fa-twitter fa-lg"></i>
+    </a>
+    <a href="https://www.instagram.com" target="_blank" class="text-white me-3">
+        <i class="fab fa-instagram fa-lg"></i>
+    </a>
+</div>
+<hr class="bg-light">
+        <p class="text-center mb-0">© 2025 🛍️GBSTORE. All Rights Reserved.</p>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>🛍️GBSTORE</title>
+    <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <div id="navbar"></div>
+<!-- Cart Section -->
+<div class="container py-5">
+    <h2 class="text-center mb-4">Your Shopping Cart</h2>
+    <div class="row">
+        <div class="col-md-8">
+            <div class="cart-item card mb-3 p-3">
+                <div class="row align-items-center">
+                    <div class="col-md-2">
+                        <img src="images/SmartPhone.jpg" class="img-fluid rounded" alt="SmartPhone">
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Smartphone</h5>
+                        <p class="text-muted">$29,900</p>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="number" class="form-control quantity" value="1" min="1">
+                    </div>
+                    <div class="col-md-2">
+                        <h5 class="total-price">$29,900</h5>
+                    </div>
+                    <div class="col-md-1">
+                        <button class="btn btn-danger remove-item">Remove<i class="fas fa-trash"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cart-item card mb-3 p-3">
+                <div class="row align-items-center">
+                    <div class="col-md-2">
+                        <img src="images/Laptop.jpg" class="img-fluid rounded" alt="Laptop">
+
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Laptop</h5>
+                        <p class="text-muted">$30,000</p>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="number" class="form-control quantity" value="1" min="1">
+                    </div>
+                    <div class="col-md-2">
+                        <h5 class="total-price">$30,000</h5>
+                    </div>
+                    <div class="col-md-1">
+                        <button class="btn btn-danger remove-item">Remove<i class="fas fa-trash"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div> <div class="cart-item card mb-3 p-3">
+            <div class="row align-items-center">
+                <div class="col-md-2">
+                    <img src="images/headphone.jpg" class="img-fluid rounded" alt="headphone">
+
+                </div>
+                <div class="col-md-4">
+                    <h5>headphone</h5>
+                    <p class="text-muted">$9,999</p>
+                </div>
+                <div class="col-md-3">
+                    <input type="number" class="form-control quantity" value="1" min="1">
+                </div>
+                <div class="col-md-2">
+                    <h5 class="total-price">$9,999</h5>
+                </div>
+                <div class="col-md-1">
+                    <button class="btn btn-danger remove-item">Remove<i class="fas fa-trash"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- Cart Summary -->
+        <div class="col-md-4">
+            <div class="card p-3">
+                <h4 class="text-center">Order Summary</h4>
+                <hr>
+                <p><strong>Subtotal:</strong> <span id="subtotal">$29,900+30,000</span></p>
+                <p><strong>Tax (5%):</strong> <span id="tax">$5</span></p>
+                <h5><strong>Total:</strong> <span id="total">$59,950</span></h5>
+                <a href="checkout.html" class="btn btn-success w-100 mt-3">Proceed to Checkout</a>
+      </div>
+    </div>
+</div>
+<div id="footer"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

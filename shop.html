@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>🛍️GBSTORE</title>
+    <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <div id="navbar"></div>
+<!-- Filters & Sorting -->
+<div class="container py-4">
+    <div class="row">
+        <div class="col-md-3">
+            <h5>Filter by Category</h5>
+            <select class="form-select" id="categoryFilter">
+                <option value="all">All Categories</option>
+                <option value="electronics">Electronics</option>
+                <option value="fashion">Fashion</option>
+                <option value="home">Home Appliances</option>
+            </select>
+        </div>
+        <div class="col-md-3">
+            <h5>Sort by</h5>
+            <select class="form-select" id="sortPrice">
+                <option value="low-to-high">Price: Low to High</option>
+                <option value="high-to-low">Price: High to Low</option>
+            </select>
+        </div>
+    </div>
+</div>
+
+<!-- Product Listings -->
+<div class="container py-3">
+    <div class="row" id="productList">
+        <!-- Product 1 -->
+        <div class="col-md-4 product-item" data-category="electronics" data-price="299">
+            <div class="card">
+                <img src="images/SmartPhone.jpg" class="card-img-top" alt="Smartphone">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Smartphone X</h5>
+                    <p class="text-success">$29,900</p>
+                    <a href="product.html" class="btn btn-info">View Details</a>
+                    <br>
+                    <button class="btn btn-primary add-to-cart" 
+        data-name="Smartphone-X" data-price="29900" data-image="images/Smartphone.jpg">
+    🛒 Add to Cart
+</button>
+
+<button class="btn btn-outline-danger add-to-wishlist" 
+        data-name="Smartphone-X" data-price="29900" data-image="images/Smartphone.jpg">
+    ❤️ Add to Wishlist
+</button>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="col-md-4 product-item" data-category="electronics" data-price="899">
+            <div class="card">
+                <img src="images/Laptop.jpg" class="card-img-top" alt="Laptop">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Gaming Laptop</h5>
+                    <p class="text-success">$30,000</p>
+                    <button class="btn btn-primary add-to-cart" 
+                    data-name="laptop" data-price="30000" data-image="images/laptop.jpg">
+                🛒 Add to Cart
+            </button>
+            
+            <button class="btn btn-outline-danger add-to-wishlist" 
+                    data-name="laptop" data-price="30000" data-image="images/laptop.jpg">
+                ❤️ Add to Wishlist
+            </button>
+            
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="col-md-4 product-item" data-category="fashion" data-price="49">
+            <div class="card">
+                <img src="images/books.jpg" class="card-img-top" alt="Books">
+                <div class="card-body text-center">
+                    <h5 class="card-title">All types of Books</h5>
+                    <p class="text-success">$499</p>
+                    <button class="btn btn-primary add-to-cart" 
+                    data-name="books" data-price="499" data-image="images/books.jpg">
+                🛒 Add to Cart
+            </button>
+            
+            <button class="btn btn-outline-danger add-to-wishlist" 
+                    data-name="books" data-price="499" data-image="images/books.jpg">
+                ❤️ Add to Wishlist
+            </button>
+            
+                </div>
+            </div>
+        </div>
+
+        <!-- More Products Can Be Added Here -->
+    </div>
+</div>
+<div id="footer"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+<div id="notification-popup" class="notification-popup" style="display: none;">
+    <p id="Item added Sucessfully"></p>
+</div>
+
+
+</body>
+</html>

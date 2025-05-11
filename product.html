@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>🛍️GBSTORE</title>
+    <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <div id="navbar"></div>
+<!-- Product Details Section -->
+<div class="container py-5">
+    <div class="row">
+        <!-- Product Image -->
+        <div class="col-md-6">
+            <img src="images/SmartPhone.jpg" class="img-fluid rounded shadow" alt="Smartphone">
+        </div>
+
+        <!-- Product Details -->
+        <div class="col-md-6">
+            <h2>Smartphone X</h2>
+            <h4 class="text-success">$29,900</h4>
+            <p class="text-muted">Brand: XYZ Tech</p>
+            <p>
+                The Smartphone X features a 6.5-inch OLED display, 128GB storage, and a powerful 48MP camera.
+                Experience next-level performance with a high-speed processor and long-lasting battery.
+            </p>
+            
+            <div class="d-flex align-items-center mb-3">
+                <label class="me-2">Quantity:</label>
+                <input type="number" class="form-control w-25" value="1" min="1">
+            </div>
+
+            <button class="btn btn-primary me-2"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+            <button class="btn btn-success"><i class="fas fa-bolt"></i> Buy Now</button>
+            <button class="btn btn-outline-danger add-to-wishlist" 
+            data-name="Product Name" data-price="1999" data-image="images/product1.jpg">
+        ❤️ Add to Wishlist
+    </button>
+        </div>
+    </div>
+</div>
+
+<!-- Customer Reviews Section -->
+<div class="container py-5">
+    <h3 class="text-center">Customer Reviews</h3>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card p-3 mb-3">
+                <h5>Monika Lokhande</h5>
+                <p class="text-muted">⭐⭐⭐⭐⭐</p>
+                <p>Excellent phone! The battery life is amazing, and the camera takes stunning pictures.</p>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card p-3 mb-3">
+                <h5>Amit Sharma</h5>
+                <p class="text-muted">⭐⭐⭐⭐</p>
+                <p>Great value for money. Performance is smooth, and the display is vibrant.</p>
+            </div>
+            <div class="col-md-6">
+                <div class="card p-3 mb-3">
+                    <h5>Sagar Mishra</h5>
+                    <p class="text-muted">⭐⭐</p>
+                    <p>All are good but I suggest you Build Quality & Durability Concerns</p>
+                </div>
+        </div>
+    </div>
+</div>
+<div id="footer"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+<!-- Notification Popup -->
+<div id="notification-popup" class="notification-popup">
+    <p id="Item added Sucessfully"></p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>🛍️GBSTORE</title>
+    <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <div id="navbar"></div>
+<!-- Checkout Section -->
+<div class="container py-5">
+    <div class="row">
+        <!-- Shipping Details Form -->
+        <div class="col-md-6">
+            <h3>Shipping Details</h3>
+            <form action="order-confirmation.html" method="POST">
+                <div class="mb-3">
+                    <label class="form-label">Full Name</label>
+                    <input type="text" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Email</label>
+                    <input type="email" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Phone</label>
+                    <input type="tel" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Address</label>
+                    <textarea class="form-control" rows="3" required></textarea>
+                </div>
+            </form>
+        </div>
+
+        <!-- Order Summary -->
+        <div class="col-md-6">
+            <h3>Order Summary</h3>
+            <div class="card p-3">
+                <p><strong>Product1:</strong> Smartphone X</p>
+                <p><strong>Price :</strong> $29,900</p>
+                <p><strong>Quantity:</strong> 1</p>
+                <hr>
+                <p><strong>Product2:</strong> Laptop</p>
+                <p><strong>Price :</strong> $30,000</p>
+                <p><strong>Quantity:</strong> 1</p>
+                <hr>
+                <h5><strong>Total:</strong> $59,950</h5>
+                <button class="btn btn-success w-100 mt-3" onclick="placeOrder()">Place Order</button>
+          </div>
+        </div>
+    </div>
+</div>
+<script>
+    function placeOrder() {
+        window.location.href = "order-confirm.html";  // Redirects to Order Confirmation Page
+    }
+</script>
+<div id="footer"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
